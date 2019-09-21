@@ -1,0 +1,28 @@
+
+
+
+.img-with-rotation {
+    height:100%;
+    width: 150%;
+    transform: rotate(90deg);
+    display: inline-block;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+  }
+
+  .flex-container-center {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  body {
+      height: 100%;
+      width: 100%;
+      background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  }
