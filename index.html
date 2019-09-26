@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <head>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/> 
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <body>
+
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Michael Madden</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">About Me <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="./projects/projects.html">Projects</a>
-            <a class="nav-item nav-link" href="./writing/writing.html">Writing</a>
-            <a class="nav-item nav-link" href="./consulting/consulting.html">Consulting</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-item nav-link" href="#">About Me <span class="sr-only">(current)</span></a>            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="./projects/projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="./writing/writing.html">Writing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="./consulting/consulting.html">Consulting</a>
+            </li>
+          </ul>
+          <h1 class="navbar-brand" style="color: white; text-align: center;">Software Solutions</h1>
         </div>
       </nav>
-    <div class="" >
-            <div class="viewbox">
-                <div  class="row no-gutters" style="overflow: hidden; margin-right: 40px;">
-                  <div class="col-3" style="overflow: hidden; padding: 0px; " >
-                        <img class="img-with-rotation" src="./assets/personal_picture.JPG" alt="">
+
+
+
+    <div   >
+            <div class="viewbox" >
+                <div  class="row no-gutters" style="overflow: hidden; width: 100%; ">
+                  <div class="col-4 col-sm-3 col-lg-2">
+                        <img style="object-fit: cover; "  class="img-with-rotation" src="./assets/personal_picture.png"  alt="">
                   </div>
-                  <div class="col-9" style="overflow: hidden; padding: 0px">
+                  <div class="col-8 col-sm-9 col-lg-10" style="overflow: hidden; padding: 0px">
                     <ul class="slideshow">
                       <li><a href="./projects/projects.html"></a></li>
                       <li><a href="./writing/writing.html"></a></li>                      
@@ -37,16 +51,40 @@
                   </div>
                 </div>
               </div>
-          <div class="flex-container-center">
-            <div class="container" style="margin: 10px;">
+          <div class="row" style="margin: 24px" >
+            <div class=" col-12 col-sm-12 col-md-6" style="margin-bottom: 50px">
+                <h5 style="color: white;">Who Am I</h5>
               <div class="card" style="background: black; color: white;">
-                  <div class="card-body">Who Am I
+                  <div class="card-body">
                       <div>
-                          <p>I am a web developer with a passion for building robust, efficient, and usable software applications. </p>
+                          <p>I am a web developer with a passion for building robust, efficient, and usable software applications.</p>
                       </div>
                   </div>
                 </div>              
-            </div>                      
+            </div> 
+            <div class=" col-12 col-sm-12 col-md-6" style="margin-bottom: 50px">
+                <h5 style="color: white">What I Can do For You</h5>
+                <div class="card" style="background: black; color: white;">
+                    <div class="card-body">
+                        <div>
+                            <p><strong>Do you have a website that just doesn't flow too nicely? </strong>
+                             <br> - I can turn it into the most beautiful piece of art you've ever seen. You'll be visiting your own ecommerce store 15 times a day just to look at it.
+                              <br>
+                              <br>
+                               <strong>Do you need someone to architect a piece of software for you?</strong> <br>
+                              - I love nothing more than taking an idea and drawing out the architecture of the Software Solution.
+                              <br>
+                              <br>
+                              <strong>Do you simply need someone to build a piece of Software?</strong> <br>
+                              - I adore coding
+                              <br>
+                              <br>
+                              <a href="./consulting/consulting.html" class="btn btn-success">Contact Me</a>
+                            </p>
+                        </div>
+                    </div>
+                  </div>              
+              </div>                      
           </div>
     </div>
     <script src="./index.js"></script>
