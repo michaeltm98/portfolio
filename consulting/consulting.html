@@ -2,13 +2,13 @@
 <head>
         <meta content='width=device-width, initial-scale=1' name='viewport'/> 
     <link rel="stylesheet" href="./consulting.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link defer  rel="stylesheet" href="../dependencies/bootstrap.min.css">
 
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="../index.html">Michael Madden</a>
+        <a aria-label="Home page" class="navbar-brand" href="../index.html" style="display: block">Michael Madden</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,7 +27,7 @@
               <a class="nav-item nav-link active" href="#">Consulting</a>
             </li>
           </ul>
-          <h1 class="navbar-brand" style="color: white; text-align: center;">Software Solutions</h1>
+          <h1 class="navbar-brand" style="color: white; text-align: center;">Madden Software Solutions</h1>
         </div>
       </nav>
 
@@ -36,42 +36,46 @@
             <div class="container">
                 <h1 class="display-4">Consulting</h1>
                 <p class="lead">I've done work in projects consisting of Web Development, Android Development, Backend API Development, as well as work on the AWS framework</p>
-                <hr>
-                <a class="btn btn-success" href="#">Contact me</a>
-            </div>
+                </div>
         </div>
         <div class="flex-container">
-            <div class="row">
-                <div class="col-sm-6">
+            <div class="row" style="width: 100%">
+                <div class="col-sm-12 col-md-12 col-lg-6" >
                     <div class="container" style="margin: 10px;">
-                        <div class="card" style="background: black; color: white;">
-                            <div class="card-body">Basic card
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
+                        <div class="card" style="background: black; color: white; min-height: 225px;">
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+
+                                      <h6>Contact Me!</h6>
+                                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <button style="float: right" class="btn btn-success">Success</button>
+
+                                  </form>
                             </div>
+                            
                         </div>                      
-                        <button class="btn btn-success">Success</button>
                     </div>                      
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-12 col-lg-6">
                     <div class="container" style="margin: 10px;">
-                        <div class="card" style="background: black; color: white;">
-                            <div class="card-body">Basic card
+                        <div class="card" style="background: black; color: white; min-height: 225px;">
+                            <div class="card-body"> <h6>Find me on Social Media</h6>
+                                <br>
                                 <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                   <a style="margin-right: 50px;" href="https://www.linkedin.com/in/michaelmadden98/" target="_blank"><img src="../assets/LI-Logo.png" style="height: 100px; width: 200px; object-fit: contain" alt=""></a> 
+                                   <a href="https://medium.com/@michaelmadden98" target="_blank"><img src="../assets/medium_logo.jpg" style="height: 100px; width: 200px; object-fit: contain" alt=""></a> 
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-success">Success</button>
                     </div>                      
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="../index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script defer src="../dependencies/jquery-3.4.1.min.js" ></script>
+    <script defer src="../dependencies/popper.min.js" ></script>
+    <script defer src="../dependencies/bootstrap.min.js" ></script>
 </body>

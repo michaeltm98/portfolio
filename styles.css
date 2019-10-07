@@ -1,15 +1,19 @@
 
-
+.jumbotron a {
+  color: #0060E6 !important;
+}
 
 .img-with-rotation {
     height:100%;
     width: 100%;
-    /* transform: rotate(90deg); */
     display: block;
-    opacity: 0;
-    animation: personalImageAnimation 0.5s linear 1 forwards;
+    opacity: 1;
   }
 
+  .btn-info {
+    background-color: #0051C2 !important;
+    border-color: #0051C2 !important;
+  }
   .flex-container {
     display: flex;
     justify-content: left;
@@ -25,10 +29,9 @@
   }
 
   body {
-      /* height: 100%;
-      width: 100%; */
-      background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   }
 
   .flex-container > .preview {
@@ -44,20 +47,30 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 .viewbox {
     display: flex;
     justify-content: center;
-    /* overflow: hidden;
-    margin-top: 20px; */
+    border: 1px solid #343a40;
 }
 
 
+#travelSiteSlide {
+  animation-delay: 10s;
+}
 
+#mediumSlide {
+  animation-delay: 20s;
+}
+
+#pawPrintSlide {
+  animation-delay: 30s;
+}
+
+#regaviGoogleSlide {
+  animation-delay: 40s;
+}
 
 
 .slideshow {
-    /* position: fixed; */
     width: 100%;
     height: 100%;
-    /* top: 0;
-    left: 0; */
     z-index: 0;
     list-style: none;
     margin: 0;
@@ -65,39 +78,29 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
     background: #000;
 }
 
-.slideshow li {
-    width: 100%;
-    height: 100%;
-     position: absolute;
-    /* top: 0;
-    left: 0;  */
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    opacity: 0;
-    z-index: 0;
-    animation: imageAnimation 50s linear infinite;
+.slideshow img {
+  width: 100%;
+  height: 100%;
+   position: absolute;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite;
 }
 
-.slideshow li:nth-child(1) { 
-    background-image: url(./assets/code.jpg) 
-  }
-  .slideshow li:nth-child(2) { 
-    background-image: url(./assets/TravelSites.png);
-    animation-delay: 10s; 
-  }
-  .slideshow li:nth-child(3) { 
-    background-image: url(./assets/medium.JPG);
-    animation-delay: 20s; 
-  }
-  .slideshow li:nth-child(4) { 
-    background-image: url(./assets/PawPrintScreenshot.png);
-    animation-delay: 30s; 
-  }
-  .slideshow li:nth-child(5) { 
-    background-image: url(./assets/RegaviGooglePlay.png);
-    animation-delay: 40s; 
-  }
+#codeSlide {
+  width: 100%;
+  height: 100%;
+   position: absolute;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  z-index: 0;
+  animation: imageStartAnimation 50s linear infinite;
+}
 
   @keyframes imageAnimation { 
     0% { 
@@ -115,37 +118,35 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
     20% {
       opacity: 1
     }
-    30% {
+    25% {
       opacity: 0
     }
-    40% {
-      opacity: 0
-    }
-    50% {
-      opacity: 0
-    }
-
   }
 
-  @keyframes personalImageAnimation {
-    0% {
-      opacity: 0;
+  @keyframes imageStartAnimation {
+    0% { 
+      opacity: 1; 
+    }
+    5% { 
+      opacity: 1; 
       animation-timing-function: ease-in;
     }
-    100% {
+    10% {
       opacity: 1;
+      
+    }
+    20% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    25% {
+      opacity: 0;
     }
   }
+
 
 /* Older browser support - .no-cssanimations class added by modernizr */
 .no-cssanimations .slideshow li {
 	opacity: 1;
 }
 
-
-/* 
-li a {
-  display:block;
-  height: 500px;
-  width: 1000px;
-} */
